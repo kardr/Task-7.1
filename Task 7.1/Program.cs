@@ -10,6 +10,15 @@ namespace Task_7._1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введи строку символов: ");
+            string s = Convert.ToString(Console.ReadLine());
+            var set = new HashSet<char>();
+            foreach (var chr in s)
+            {
+                set.Add(chr);
+            }
+            Console.WriteLine("Различных символов в строке: " + set.Count);
+            Console.ReadLine();
         }
     }
 }
